@@ -6,7 +6,7 @@ An object represents an abstract thing, usually with some properties (attributes
 
 ### Define and Instantiate a Class
 
-Class definitions require three basic components: the reserved word `class`, a name of the class, and the reserved word `end`. By convention, the class name begins with a capital letter. Everything between the class name and `end` is part of the class definition. 
+Class definitions require three basic components: the reserved word `class`, a name of the class, and the reserved word `end`. By convention, the class name begins with a capital letter. Everything between the class name and `end` is part of the class definition.
 
 ```ruby
 class Car
@@ -426,7 +426,7 @@ end
 ## Modules
 
 Ruby "modules" group together related information (attributes and methods).  They're like simplified classes that can't have instances and don't have inheritance. Rubyists often use them for:
-  * "namespacing": encapsulation or bundling of related content, 
+  * "namespacing": encapsulation or bundling of related content,
   * "mixins": extra methods that can be added into classes without influencing the inheritance tree
 
 
@@ -446,7 +446,7 @@ Check out the first example in Ruby's [documentation for `modules`](http://ruby-
 
 Here's how a simplified `Car` class might look with `Comparable` mixed in to compare cars just based on speed.
 
-```ruby 
+```ruby
 
 class Car
   include Comparable
@@ -459,7 +459,7 @@ class Car
   def accelerate(change)
     @speed += change
   end
-  
+
   def <=>(otherCar)
     @speed <=> otherCar.speed
   end

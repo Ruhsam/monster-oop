@@ -1,4 +1,25 @@
 # Monster class
+puts "\n#### BASE CLASS ####"
+class Monster
+   attr_accessor :threat_level, :habitat
+
+
+  # class instance variable
+  @class_description = "A scary monster!"
+
+  # class method getter for @@count class variable
+
+   def initialize(threat_level=:medium, habitat)
+      puts "RAWR!"
+      @habitat = habitat
+      @threat_level = threat_level
+   end
+
+   def habitat?(some_hab)
+    @habitat == some_hab
+  end
+
+end
   # getters and setters for instance variables
 
   # class variable for count
@@ -20,7 +41,7 @@
 # Zombie class
 
   # zombie version of class_description
-  
+
   # initial behavior and values
 
 # Werewolf class
